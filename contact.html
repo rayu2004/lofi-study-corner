@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Lo-Fi Study Corner | Contact</title>
+  <meta name="author" content="Mohammed Raiyaan Shakir" />
+  <meta name="description" content="Contact Lo-Fi Study Corner — send feedback, request playlist themes, or ask questions." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="site-header" role="banner">
+      <div class="brand">
+        <img src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"><circle cx="22" cy="22" r="20" fill="%232ecc71"/><rect x="18" y="12" width="2.5" height="12" fill="white"/><rect x="18" y="23" width="9" height="2.5" fill="white"/></svg>' alt="Lo-Fi Study Corner logo" width="44" height="44" />
+        <h1 class="brand-name"><a href="index.html">Lo-Fi Study Corner</a></h1>
+      </div>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+          <li><a href="playlists.html">Playlists</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="site-main">
+      <section class="intro">
+        <h2>Contact Us</h2>
+        <p>Have a playlist request, feature idea, or question? Send us a note and we’ll get back to you. Fields marked <span class="req">*</span> are required.</p>
+      </section>
+
+      <section class="contact">
+        <form class="contact-form" action="https://wp.zybooks.com/form-viewer.php" method="post">
+          <label for="name">Full Name <span class="req">*</span></label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email <span class="req">*</span></label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone Number <span class="req">*</span></label>
+          <input type="tel" id="phone" name="phone" required placeholder="555-555-5555" />
+
+          <fieldset>
+            <legend>Contact Preference <span class="req">*</span></legend>
+            <label><input type="radio" name="preference" value="email" required /> Email</label>
+            <label><input type="radio" name="preference" value="phone" required /> Phone</label>
+          </fieldset>
+
+          <label for="comments">Comments <span class="req">*</span></label>
+          <textarea id="comments" name="comments" required></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2025 Lo-Fi Study Corner. Music courtesy of YouTube creators.</p>
+    </footer>
+  </div>
+</body>
+</html>
